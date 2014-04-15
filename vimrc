@@ -18,7 +18,17 @@ if v:version >= 702
 
   " add plugins
   NeoBundle 'Shougo/unite.vim'
-  NeoBundle 'Shougo/neocomplcache'
+  NeoBundle 'Shougo/vimproc'
+
+  if has('lua') && v:version > 703
+    NeoBundle 'Shougo/neocomplete.vim'
+    NeoBundle 'violetyk/neocomplete-php.vim'
+    echomsg "using neocomplete"
+  else
+    NeoBundle 'Shougo/neocomplcache.vim'
+    echomsg "using neocomplcache"
+  endif
+
   NeoBundle 'Shougo/neosnippet'
 
   filetype plugin on
