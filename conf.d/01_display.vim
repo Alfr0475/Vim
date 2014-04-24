@@ -28,3 +28,21 @@ set showcmd
 " 検索結果をハイライト表示
 set hlsearch
 
+" エスケープシーケンスの表示
+set list
+set listchars=tab:^\ 
+
+" 全角スペースの表示
+function! FullwidthSpace()
+    highlight FullwidthSpace cterm=reverse ctermfg=DarkGray gui=reverse guifg=DarkGray
+endfunction
+
+if has('syntax')
+    augroup FullwidthSpace
+        autocmd!
+        autocmd ColorScheme       * call FullwidthSpace()
+        autocmd VimEnter,WinEnter * match FullwidthSpace /　/
+    augroup END
+    call FullwidthSpace()
+endif
+
