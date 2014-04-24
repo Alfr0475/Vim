@@ -30,7 +30,7 @@ set hlsearch
 
 " エスケープシーケンスの表示
 set list
-set listchars=tab:^\ 
+set listchars=tab:^\ ,trail:_
 
 " 全角スペースの表示
 function! FullwidthSpace()
