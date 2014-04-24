@@ -18,6 +18,8 @@ if v:version >= 702
 
   " add plugins
   NeoBundle 'Shougo/unite.vim'
+  NeoBundle 'h1mesuke/unite-outline'
+
   NeoBundle 'Shougo/vimproc'
 
   if has('lua') && v:version > 703
