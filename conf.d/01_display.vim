@@ -50,4 +50,9 @@ endif
 set laststatus=2
 
 " ColorScheme設定
-colorscheme hybrid
+if v:version >= 702
+  if neobundle#is_installed('vim-hybrid')
+    colorscheme hybrid
+  endif
+endif
+
