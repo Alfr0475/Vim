@@ -34,6 +34,8 @@ if v:version >= 702
   NeoBundle 'Shougo/neosnippet'
   NeoBundle 'itchyny/lightline.vim'
   NeoBundle 'osyo-manga/vim-anzu'
+  NeoBundle 'w0ng/vim-hybrid'
+  NeoBundle 'cocopon/lightline-hybrid.vim'
 
   filetype plugin on
 

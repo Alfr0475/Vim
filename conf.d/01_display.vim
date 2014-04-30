@@ -49,3 +49,5 @@ endif
 " ステータスラインの表示位置
 set laststatus=2
 
+" ColorScheme設定
+colorscheme hybrid
