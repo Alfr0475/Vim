@@ -43,6 +43,9 @@ if v:version >= 702
 endif
 
 " 設定ファイルの読み込み
-set runtimepath+=~/.vim/
+if has('vim_starting')
+  set runtimepath+=~/.vim/
+endif
+
 runtime! conf.d/*.vim
 
