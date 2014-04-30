@@ -46,3 +46,6 @@ if has('syntax')
     call FullwidthSpace()
 endif
 
+" ステータスラインの表示位置
+set laststatus=2
+
