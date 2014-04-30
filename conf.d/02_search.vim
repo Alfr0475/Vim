@@ -13,3 +13,5 @@ set smartcase
 " インクリメンタルサーチを行う
 set incsearch
 
+" ESCを２回押すと検索をリセットする
+nnoremap <Esc><Esc> :nohlsearch<CR><Esc>:set nopaste<CR>
