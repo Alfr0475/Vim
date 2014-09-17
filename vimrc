@@ -32,6 +32,7 @@ if v:version >= 702
   endif
 
   NeoBundle 'Shougo/neosnippet'
+  NeoBundle 'Shougo/neosnippet-snippets'
   NeoBundle 'itchyny/lightline.vim'
   NeoBundle 'osyo-manga/vim-anzu'
   NeoBundle 'w0ng/vim-hybrid'
