@@ -20,7 +20,14 @@ if v:version >= 702
   NeoBundle 'Shougo/unite.vim'
   NeoBundle 'h1mesuke/unite-outline'
 
-  NeoBundle 'Shougo/vimproc'
+  NeoBundle 'Shougo/vimproc', {
+    \ 'build' : {
+      \ 'windows' : 'make -f make_mingw32.mak',
+      \ 'cygwin' : 'make -f make_cygwin.mak',
+      \ 'mac' : 'make -f make_mac.mak',
+      \ 'unix' : 'make -f make_unix.mak',
+    \ },
+  \ }
 
   if has('lua') && v:version > 703
     NeoBundle 'Shougo/neocomplete.vim'
